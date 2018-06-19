@@ -10,12 +10,15 @@ namespace Real_Estate_Company
         private List<Employee> employees;
         private List<RealEstate> realEstates;
 
-        public Company()
+        public Company(string name)
         {
-            
+            this.Name = name;
         }
 
-        public string Name { get; set; }
+        public string Name {
+            get { return this.name; }
+            set {this.name = value; }
+        }
 
         public override string ToString()
         {

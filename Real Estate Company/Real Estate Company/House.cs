@@ -3,11 +3,12 @@
     public class House : RealEstate
     {
         private double squarMeterBuildUpArea;
-        private double yard;
+        private double squarMeterYard;
         private int floors;
         private bool furnishing;
 
-        public House()
+        public House(double area, double pricePerSquareMeter, string location, double squarMeterBuildUpArea, double squarMeterYard, int floors, bool furnishing)
+            : base(area, pricePerSquareMeter, location)
         {
             
         }
