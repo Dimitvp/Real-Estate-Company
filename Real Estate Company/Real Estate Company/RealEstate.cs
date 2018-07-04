@@ -1,4 +1,6 @@
-﻿namespace Real_Estate_Company
+﻿using System.Text;
+
+namespace Real_Estate_Company
 {
     public class RealEstate
     {
@@ -25,12 +27,14 @@
 
         protected string Location {
             get { return this.location; }
-            set { this.location = value; }
+            private set { this.location = value; }
         }
 
         public override string ToString()
         {
-            return this.GetType().Name;
+            var realEstateType = this.GetType().Name;
+
+            return $"{realEstateType}, {this.Area}, {this.PricePerSquareMeter}, {this.Location}";
         }
     }
 }

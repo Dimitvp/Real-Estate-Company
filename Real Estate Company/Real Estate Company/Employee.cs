@@ -6,7 +6,7 @@
         private string occupation;
         private double workingЕxperience;
 
-        public Employee(string name, string occupation, double workingExperience)
+        public Employee(string name, string occupation, double workingЕxperience)
         {
             this.Name = name;
             this.Occupation = occupation;
@@ -25,12 +25,12 @@
 
         public double WorkingExperience {
             get { return this.workingЕxperience; }
-            set { this.workingЕxperience = value; }
+            private set { this.workingЕxperience = value; }
         }
 
         public override string ToString()
         {
-            return base.ToString();
+            return $"{this.Name}, {this.Occupation}, {this.WorkingExperience}";
         }
     }
 }
