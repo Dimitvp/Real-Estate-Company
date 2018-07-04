@@ -15,12 +15,12 @@
 
         public string Name {
             get { return this.name; }
-            set { this.name = value; }
+            private set { this.name = value; }
         }
 
         public string Occupation {
             get { return this.occupation; }
-            set { this.occupation = value; }
+            private set { this.occupation = value; }
         }
 
         public double WorkingExperience {

@@ -24,16 +24,16 @@
 
         public string Name {
             get { return this.name; }
-            set {this.name = value; }
+            private set {this.name = value; }
         }
 
         public string OwnerName {
             get { return this.ownerName; }
-            set { this.ownerName = value; } }
+            private set { this.ownerName = value; } }
 
         public string UIC {
             get { return this.uic; }
-            set { this.uic = value; } }
+            private set { this.uic = value; } }
 
         public override string ToString()
         {

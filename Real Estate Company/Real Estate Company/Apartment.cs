@@ -17,17 +17,17 @@
         public int Floor
         {
             get { return this.floor; }
-            set { this.floor = value; }
+            private set { this.floor = value; }
         }
 
         public bool Elevator {
             get { return this.elevator; }
-            set { this.elevator = value; }
+            private set { this.elevator = value; }
         }
 
         public bool Furnishing {
             get { return this.furnishing; }
-            set { this.furnishing = value; }
+            private set { this.furnishing = value; }
         }
 
         public override string ToString()
